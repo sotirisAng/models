@@ -1,0 +1,42 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="Artworks.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="ProvidedCHO1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="Agent1"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Agent2"];
+n5[style="filled",color="white",fillcolor="lightgray",label="WebResource1"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="CreditLine"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="provider_uri"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="ObjectID"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="Classification"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="artist_uri"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="URL"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="ThumbnailURL"];
+n13[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="Date"];
+n15[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n16[shape="plaintext",style="filled",fillcolor="gold",label="Medium"];
+n17[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="Title"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="creator"]
+n2 -> n4[color="brown",fontcolor="black",label="provider"]
+n2 -> n5[color="brown",fontcolor="black",label="hasView"]
+n4 -> n6[color="brown",fontcolor="black",label="prefLabel"]
+n4 -> n7[color="brown",fontcolor="black",label="classLink"]
+n2 -> n8[color="brown",fontcolor="black",label="identifier"]
+n2 -> n9[color="brown",fontcolor="black",label="type"]
+n3 -> n10[color="brown",fontcolor="black",label="classLink"]
+n2 -> n11[color="brown",fontcolor="black",label="classLink"]
+n5 -> n12[color="brown",fontcolor="black",label="classLink"]
+n3 -> n13[color="brown",fontcolor="black",label="begin"]
+n2 -> n14[color="brown",fontcolor="black",label="date"]
+n3 -> n15[color="brown",fontcolor="black",label="prefLabel"]
+n2 -> n16[color="brown",fontcolor="black",label="medium"]
+n3 -> n17[color="brown",fontcolor="black",label="end"]
+n2 -> n18[color="brown",fontcolor="black",label="title"]
+n2 -> n18[color="brown",fontcolor="black",label="title"]
+}
